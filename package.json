@@ -1,0 +1,39 @@
+{
+  "name": "babel-preset-techno-babel",
+  "version": "1.0.0",
+  "description": "Adds stable future js operators and a little scala.js for terse functional programming",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/d3dc/babel-preset-techno-babel.git"
+  },
+  "keywords": [
+    "babel",
+    "preset",
+    "esnext",
+    "pipeline",
+    "optional",
+    "nullish",
+    "logical-assignment",
+    "lambdas"
+  ],
+  "dependencies": {
+    "@babel/plugin-proposal-optional-chaining": "^7.0.0",
+    "@babel/plugin-proposal-do-expressions": "^7.0.0",
+    "@babel/plugin-proposal-logical-assignment-operators": "^7.0.0",
+    "@babel/plugin-proposal-nullish-coalescing-operator": "^7.0.0",
+    "@babel/plugin-proposal-numeric-separator": "^7.0.0",
+    "@babel/plugin-proposal-pipeline-operator": "^7.0.0",
+    "@babel/plugin-proposal-export-default-from": "^7.0.0",
+    "babel-plugin-transform-scala-lambda": "^1.0.0"
+  },
+  "author": "@d3dc",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/d3dc/babel-preset-techno-babel/issues"
+  },
+  "homepage": "https://github.com/d3dc/babel-preset-techno-babel#readme"
+}
