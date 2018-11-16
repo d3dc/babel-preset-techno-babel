@@ -9,6 +9,12 @@
 - `?.` - optional chaining
   - only access properties if the receiver is defined
 
+### Logical assignment operators
+
+- `||=`
+- `&&=`
+- `??=`
+
 ### New blocks
 
 - do
@@ -24,5 +30,6 @@
 
 ### Misc
 
+- `export default from`
 - numeric literal separator
   - `9_000_000`
