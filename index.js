@@ -1,6 +1,7 @@
 module.exports = () => ({
   plugins: [
-    require('babel-plugin-transform-scala-lambda'),
+    require('babel-plugin-holes'),
+    require('babel-plugin-implicit-function'),
     require('@babel/plugin-proposal-do-expressions'),
     require('@babel/plugin-proposal-export-default-from'),
     require('@babel/plugin-proposal-optional-chaining'),
