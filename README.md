@@ -37,12 +37,17 @@ babel needs more babble.
 
 ### Holey lambdas
 
+- new keyword `it`
+  - `it` becomes `obj => obj`
+  - `it.prop` becomes `obj => obj.prop`
+  - `it.length >= 8` becomes `obj => obj.length > = 8`
+  - _remember_ stays in parens
 - argument placeholders
-  - `reduce(_ + _)` becomes `reduce((a, b) => a + b)`
-- accessor
-  - `_.prop` becomes `obj => obj.prop`
-- binary accessors
-  - `_.length >= 8` becomes `obj => obj.length > = 8`
+  - `map(transform(_, _))` becomes `map((a, b) => transform(a, b))`
+  - _remember_ traverses out of parens
+- new keyword `lift`
+  - `reduce(lift(_ + _))` becomes `reduce((a, b) => a + b)`
+  - an empty scope to traverse out of with placeholders
 
 ### Misc
 

@@ -1,6 +1,6 @@
 module.exports = () => ({
   plugins: [
-    require('babel-plugin-holes'),
+    require('param.macro/plugin'),
     require('babel-plugin-implicit-function'),
     require('@babel/plugin-proposal-do-expressions'),
     require('@babel/plugin-proposal-export-default-from'),
