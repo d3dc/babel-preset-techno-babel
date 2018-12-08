@@ -1,6 +1,5 @@
 module.exports = () => ({
   plugins: [
-    require('param.macro/plugin'),
     require('babel-plugin-implicit-function'),
     require('@babel/plugin-proposal-do-expressions'),
     require('@babel/plugin-proposal-export-default-from'),
@@ -14,5 +13,12 @@ module.exports = () => ({
         proposal: 'minimal',
       },
     ],
+    [
+      require('babel-plugin-auto-import'),
+      {
+        declarations: [{ members: ['it', '_', 'lift'], path: 'param.macro' }],
+      },
+    ],
+    require('param.macro/plugin'),
   ],
 })
