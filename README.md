@@ -37,17 +37,13 @@ babel needs more babble.
 
 ### Holey lambdas
 
-- new keyword `it`
-  - `it` becomes `obj => obj`
-  - `it.prop` becomes `obj => obj.prop`
-  - `it.length >= 8` becomes `obj => obj.length > = 8`
-  - _remember_ stays in parens
-- argument placeholders
-  - `map(transform(_, _))` becomes `map((a, b) => transform(a, b))`
-  - _remember_ traverses out of parens
-- new keyword `lift`
-  - `reduce(lift(_ + _))` becomes `reduce((a, b) => a + b)`
-  - an empty scope to traverse out of with placeholders
+- [basic placeholders](https://github.com/citycide/babel-plugin-partial-application/blob/master/readme.md#basic-placeholders): `add(1, _)`
+- [spread placeholders](https://github.com/citycide/babel-plugin-partial-application/blob/master/readme.md#spread-placeholders): `Math.max(..._)`
+- [object placeholders](https://github.com/citycide/babel-plugin-partial-application/blob/master/readme.md#object-placeholders): `_.hasOwnProperty('dapper')`
+- [lambda parameters](https://github.com/citycide/babel-plugin-partial-application/blob/master/readme.md#lambda-parameters): `people.map(_.name)`
+- [positional placeholders](https://github.com/citycide/babel-plugin-partial-application/blob/master/readme.md#positional-placeholders): `` const isSameThing = _`1` === _`1` ``
+- [binary expressions](https://github.com/citycide/babel-plugin-partial-application/blob/master/readme.md#binary-expressions): `_ === 'awesome'`, `_.getPower().level > 9000`
+- [default parameters](https://github.com/citycide/babel-plugin-partial-application/blob/master/readme.md#default-parameters): `const stringify = JSON.stringify(_, null, _ = 2)`
 
 ### Misc
 

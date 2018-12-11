@@ -1,7 +1,7 @@
 module.exports = () => ({
   plugins: [
-    require('babel-plugin-macros'),
     require('babel-plugin-implicit-function'),
+    require('babel-plugin-partial-application'),
     require('@babel/plugin-proposal-do-expressions'),
     require('@babel/plugin-proposal-export-default-from'),
     require('@babel/plugin-proposal-optional-chaining'),
@@ -12,12 +12,6 @@ module.exports = () => ({
       require('@babel/plugin-proposal-pipeline-operator'),
       {
         proposal: 'minimal',
-      },
-    ],
-    [
-      require('babel-plugin-auto-import'),
-      {
-        declarations: [{ members: ['it', '_', 'lift'], path: 'param.macro' }],
       },
     ],
   ],

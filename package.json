@@ -28,10 +28,8 @@
     "@babel/plugin-proposal-numeric-separator": "^7.0.0",
     "@babel/plugin-proposal-optional-chaining": "^7.0.0",
     "@babel/plugin-proposal-pipeline-operator": "^7.0.0",
-    "babel-plugin-auto-import": "^0.9.3",
     "babel-plugin-implicit-function": "^0.1.1",
-    "babel-plugin-macros": "^2.4.2",
-    "param.macro": "^2.1.0"
+    "babel-plugin-partial-application": "^1.6.2"
   },
   "author": "@d3dc",
   "license": "ISC",
