@@ -1,6 +1,6 @@
 {
   "name": "babel-preset-techno-babel",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Adds stable future js operators and a little scala.js for terse functional programming",
   "main": "index.js",
   "scripts": {
